@@ -24,7 +24,7 @@ app.use('/restaurants/:id', express.static(path.join(__dirname, 'public')));
 //   res.redirect(`http://54.177.233.239/api/restaurants/${req.params.id}/sidebar`)
 // });
 app.get('/api/restaurants/:id/recommendations', (req, res) => {
-  res.redirect(`http://localhost:3004/api/restaurants/${req.params.id}/recommendations`)
+  res.redirect(`http://54.193.96.60:3004/api/restaurants/${req.params.id}/recommendations`)
 });
 
 app.listen(port, () => {
